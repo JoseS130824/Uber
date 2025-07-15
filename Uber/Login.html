@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Uber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            verdeLima: '#c1f11d',
+            verdeOscuro: '#9cd80c',
+            verdeClaro: '#fefde8',
+            verdeOscuroC: '#cbcab9'
+          }
+        }
+      }
+    }
+  </script>
+<style>
+        .highlight-yellow {
+            background-color: #c1f11d;
+            padding: 0.25rem 0.5rem;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        .highlight-rotate-small {
+            transform: rotate(-1deg);
+            display: inline-block; 
+        }
+        .highlight-rotate-smaller {
+            transform: rotate(0.5deg);
+            display: inline-block;
+        }
+    </style>
+
+<body class="bg-verdeClaro text-black font-semibold">
+<!--Linsay´s part-->
+<div>
+<nav class="w-full bg-black text-white px-3 py-4 flex justify-between items-center flex
+     items-center space-x-6">
+
+<div class="text-4xl"><p class="font-semibold">Uber</p></div>
+<div class="text-sm"><p>Viaja</p></div>
+<div class="text-sm"><p>Conduce</p></div>
+<div class="text-sm"><p>Uber Eats</p></div>
+<div class="text-sm pr-16"><p>Quiénes somos</p></div>
+<div class="text-sm"><span>ES</span></div>
+<div class="text-sm"><p>Ayuda</p></div>
+<div class="text-sm hover:underline"><p>Inicia sesión</p></div>
+<button class="bg-verdeLima text-black border-black text-xl  px-4 py-2 rounded-full hover:
+bg-gray-2 transition hover:bg-verdeOscuro ">Regístrate</button>
+
+</nav>
+
+<div class="flex items-center justify-center bg-[url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_768,w_1152/v1730197725/assets/0f/48c7ba-da13-4fdc-b54c-42878042f513/original/Airport-Fall.png')] bg-center h-screen mb-20">
+        <div class="container mx-auto px-2 py-8 md:py-16 items-center">
+            <div class="leading-tight text-center py-20 bg-verdeClaro rounded-md bg-opacity-70">
+              <p class="text-black text-5xl font-extrabold pb-4">¡Haz que cada minuto cuente! <br>¡Con <span class="highlight-yellow highlight-rotate-smaller text-black text-5xl font-extrabold">Uber</span><span class="text-black text-5xl font-extrabold">nada te</span> <br>
+            <span class="highlight-yellow highlight-rotate-small text-black text-5xl font-extrabold">detiene!</span></p>
+            </div>
+        </div>
+</div>
+
+<div class="min-h-screen flex items-center justify-center bg-verdeClaro">
+        <div class="container mx-auto px-2 py-8 md:py-16 flex flex-col md:flex-row items-center md:items-stretch">
+            <div class="leading-tight max-w-2xl pl-14 pr-40">
+              <p class="text-black text-5xl font-bold pb-9">Viaja a cualquier <br> lugar con la <br>app de <span class="relative inline-block">
+            <span class="highlight-yellow highlight-rotate-smaller text-black text-5xl font-bold">Uber</span>
+        </span></p>
+    <div> 
+    <input type="text" placeholder="Punto de partida" class="bg-verdeOscuroC placeholder-gray-600 py-2 px-20 rounded-md text-lg font-sans transition-colors mb-4 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 shadow-lg">
+    </input> <br>
+    <input type="text" placeholder="Destino" class="bg-verdeOscuroC placeholder-gray-600 py-2 px-20 rounded-md text-lg font-sans transition-colors mb-4 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 shadow-lg">
+    </input>
+    </div> 
+
+    <div class="flex justify-center space-x-5 items-end">
+        <div class="flex flex-col">
+        <label for="fecha" class="mb-1 text-sm font-medium text-gray-600">Fecha</label>
+        <input id="fecha" type="date" class="bg-verdeOscuroC text-gray-600 px-5 mr-0 py-4 border rounded-md">
+    </div>
+    
+    <div class="flex flex-col">
+        <label for="fecha" class="mb-1 text-sm font-medium text-gray-600">Hora</label>
+        <input id="time" type="date" class="bg-verdeOscuroC text-gray-600 px-5 ml-0 py-4 border rounded-md">
+    </div>
+</div>
+<br>
+<button class="bg-verdeLima text-black px-4 py-2 border-black rounded-md hover:bg-verdeOscuro">Ver precios</button>
+<br><br>
+<p class="hover:underline text-gray-500">Inicia sesión para ver tu actividad reciente</p>
+        </div>
+            <div class="w-full md:w-1/2 flex items-center justify-center mt-8 md:mt-0 pl-10">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_896,w_1344/v1712926828/assets/a3/cf8564-e2a6-418c-b9b0-65dd285c100b/original/3-2-ridesharing-new.jpg" alt="Personas en un aeropuerto con un coche y avión" class="max-w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!--Lucía's part-->
+<h1 class="p-10 text-[40px] font-sans font-bold">Sugerencias</h1>
+
+    <div class="p-4 flex">
+        <div class="bg-lime-400 text-black-700 p-4 rounded-lg mx-auto overflow-hidden w-90">
+            <p class="px-5 font-semibold text-[30px]">Viajes</p>
+            <p>Viaje a cualquier lugar con la app de Uber. Pida un viaje, súbase y relájese.</p>
+            <button class="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Detalles</button>
+            <div>
+                <img src="auto (1).png" alt="" class="py-3">
+            </div>
+        </div>
+
+        <div class="bg-lime-400 text-black-700 p-4 rounded-lg max-w-xl mx-auto relative overflow-hidden w-90">
+            <p class="px-5 font-semibold text-[30px]">Reserve</p>
+            <p>Reserve su viaje con anticipación para que pueda relajarse ese día.</p>
+            <button class="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Detalles</button>
+            <div>
+                <img src="calendario (1).png" alt="" class="py-3">
+            </div>
+        </div>
+
+        <div class="bg-lime-400 text-black-700 p-4 rounded-lg max-w-xl mx-auto relative overflow-hidden w-90">
+            <p class="px-5 font-semibold text-[30px]">Envíos</p>
+            <p>Uber hace que la entrega de la entrega de artículos el mismo día sea más fácil que nunca.</p>
+            <button class="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Detalles</button>
+            <div>
+                <img src="envios (1).png" alt="" class="py-3">
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    <div class="p-4 flex">
+
+        <div class="bg-lime-400 text-black-700 p-4 rounded-lg mx-auto overflow-hidden w-90">
+            <p class="px-5 font-semibold text-[30px]">Moto</p>
+            <p>Obtén viajes económicos en motocicleta en minutos desde la puerta de tu casa.</p>
+            <button class="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Detalles</button>
+            <div>
+                <img src="moto (1).png" alt="" class="py-3">
+            </div>
+        </div>
+
+        <div class="bg-lime-400 text-black-700 p-4 rounded-lg mx-auto overflow-hidden w-90">
+            <p class="px-5 font-semibold text-[30px]">Fletes</p>
+            <p>Transporte y seguimiento de carga para personas y empresas.</p>
+            <button class="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Detalles</button>
+            <div>
+                <img src="Fletes (1).png" alt="" class="py-3">
+            </div>
+        </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!--Mateo´s part-->
+<div class="min-h-screen flex items-center justify-center bg-verdeClaro">
+        <div class="container mx-auto px-2 py-8 md:py-16 flex flex-col md:flex-row items-center md:items-stretch">
+            <div class="leading-tight max-w-2xl pl-2">
+              <p class="text-black text-5xl font-extrabold pb-4">Inicia sesión para ver tu</p>
+        <span class="relative inline-block">
+            <span class="highlight-yellow highlight-rotate-smaller text-black text-5xl font-extrabold">actividad</span>
+            <span class="highlight-yellow highlight-rotate-small text-black text-5xl font-extrabold">reciente</span>
+        </span>
+        
+                <p class="text-base sm:text-lg text-gray-700 mb-10 pt-4">
+                    Consulta viajes anteriores, sugerencias personalizadas, recursos de soporte y más.
+                </p>
+                <button class="bg-verdeLima text-black py-3 px-6 rounded-md text-lg font-medium hover:bg-verdeOscuro transition-colors mb-4 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 shadow-lg">
+                    Inicia sesión con tu cuenta
+                </button>
+                <p class="text-sm text-gray-600">
+                    ¿No tienes una cuenta Uber? <a href="#" class="text-black bg-verdeLima px-1 rounded-md hover:underline font-medium">Regístrate</a>
+                </p>
+            </div>
+
+            <div class="w-full md:w-1/2 flex items-center justify-center mt-8 md:mt-0 pl-10">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_768,w_1152/v1730197725/assets/0f/48c7ba-da13-4fdc-b54c-42878042f513/original/Airport-Fall.png" alt="Personas en un aeropuerto con un coche y avión" class="max-w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+<!--Magalí's part-->
+    <div class="max-w-6xl mx-auto p-8 grid md:grid-cols-2 gap-8 bg-white shadow-lg rounded-xl">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Planea para más adelante</h1>
+        <p class="text-gray-600 mb-6">Viaja bien con Uber Reserve</p>
+
+        <label class="block mb-2 text-sm text-gray-700" for="date">Fecha</label>
+        <input type="date" id="date" class="w-full p-3 border rounded-md mb-4" />
+
+        <label class="block mb-2 text-sm text-gray-700" for="time">Hora</label>
+        <input type="time" id="time" class="w-full p-3 border rounded-md mb-6" />
+
+        <button class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
+          Siguiente
+        </button>
+      </div>
+
+      <div class="bg-lime-400 p-6 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">¿Por qué Uber Reserve?</h2>
+        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+          <li>Elige la hora exacta con hasta 90 días de anticipación</li>
+          <li>Tiempo de espera adicional incluido</li>
+          <li>Cancelación sin costo hasta 60 minutos antes</li>
+        </ul>
+        <div class="mt-6 flex items-center justify-center">
+          <img src="https://img.icons8.com/ios-filled/100/clock--v1.png" alt="Reloj" class="w-12 h-12 mr-4" />
+          <img src="https://img.icons8.com/ios-filled/100/calendar.png" alt="Calendario" class="w-12 h-12" />
+        </div>
+      </div>
+
+    </div>
+
+    <!--Jeff's part-->
+<div class="min-h-screen flex flex-col items-center justify-center px-4 md:flex-row md:justify-around">
+    <div class="max-w-md mb-8 md:mb-0">
+      <img src="conductor.jpeg" alt="Conductor en el auto" class="rounded-lg shadow-md">
+    </div>
+    <div class="max-w-md text-center md:text-left">
+      <h1 class="text-4xl font-bold leading-tight mb-4 text-black">Conduce cuando quieras<br>y genera las ganancias que necesites</h1>
+      <p class="text-lg mb-6 text-gray-700">
+        Genera ganancias en tu propio tiempo con entregas, viajes o ambos. Puedes usar tu propio auto u optar por un vehículo de renta a través de la app de Uber.
+      </p>
+      <div class="flex flex-col md:flex-row md:items-center gap-4">
+        <button class="bg-lime-500 text-white font-semibold px-6 py-3 rounded-md hover:bg-lime-600 transition">
+          Comenzar
+        </button>
+        <a href="#"
+           class="bg-lime-500 text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition">
+          ¿Ya tienes una cuenta? Iniciar sesión
+        </a>
+      </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+    <!--Yami´s part-->
+<div class="flex flex-row-reverse gap-10 h-screen items-center bg-verdeClaro">
+    <img src="img3.jpeg" alt="" class="rounded mr-30 size-160 ">
+    <div class="max-w-xl">
+        <h2 class="font-bold text-4xl mb-4">La misma plataforma de <br>Uber, reinventada para los <br>negocios.</h2>
+        <p class="text-gray-700 mb-6"> Uber para Empresas es una plataforma con la que las 
+        <br>empresas de todos los tamaños pueden gestionar viajes y <br>comidas globales, así como entregas locales.</p>
+        <div>
+        <button class="rounded-sm border border-lime-400 bg-lime-400 px-12 py-3 text-md font-medium text-black">Comenzar</button>
+        <button class="border border-black text-black px-6 py-2 rounded">Conoce nuestras soluciones</button>
+    </div>
+   </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- Bea's part -->
+    </footer>
+<body class="bg-white text-black">
+
+ 
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold mb-10 text-black">Es más fácil con las apps</h1>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+     
+      <div class="bg-lime-400 p-6 flex items-center shadow-md rounded-lg border-l-4 border-black">
+        <img src="image.jpeg" alt="QR Uber" class="w-32 h-32" />
+        <div class="ml-6">
+          <h2 class="text-xl font-semibold text-black">Descarga la app de Uber</h2>
+          <p class="text-gray-600 mt-1">Escanea para descargar</p>
+        </div>
+        <div class="ml-auto text-2xl text-black">→</div>
+      </div>
+
+     
+      <div class="bg-lime-400 p-6 flex items-center shadow-md rounded-lg border-l-4 border-black">
+        <img src="image.jpeg" alt="QR Socios" class="w-32 h-32" />
+        <div class="ml-6">
+          <h2 class="text-xl font-semibold text-black">Descarga la app para socios</h2>
+          <p class="text-gray-600 mt-1">Escanea para descargar</p>
+        </div>
+        <div class="ml-auto text-2xl text-black">→</div>
+      </div>
+
+    </div>
+  </div>
+
+ 
+  <div class="mt-24"></div>
+
+ 
+  <footer class="bg-black text-white px-6 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      
+      <div>
+        <h3 class="font-bold mb-4 text-green-500">Compañía</h3>
+        <ul>
+          <li><a href="#" class="text-sm hover:underline">Quiénes somos</a></li>
+          <li><a href="#" class="text-sm hover:underline">Lo que ofrecemos</a></li>
+          <li><a href="#" class="text-sm hover:underline">Sala de prensa</a></li>
+          <li><a href="#" class="text-sm hover:underline">Inversiones</a></li>
+          <li><a href="#" class="text-sm hover:underline">Blog</a></li>
+          <li><a href="#" class="text-sm hover:underline">Oportunidades laborales</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h3 class="font-bold mb-4 text-green-500">Productos</h3>
+        <ul>
+          <li><a href="#" class="text-sm hover:underline">Viaja</a></li>
+          <li><a href="#" class="text-sm hover:underline">Conduce</a></li>
+          <li><a href="#" class="text-sm hover:underline">Hacer entregas</a></li>
+          <li><a href="#" class="text-sm hover:underline">Comida</a></li>
+          <li><a href="#" class="text-sm hover:underline">Uber para empresas</a></li>
+          <li><a href="#" class="text-sm hover:underline">Uber Freight</a></li>
+          <li><a href="#" class="text-sm hover:underline">Tarjetas de regalo</a></li>
+          <li><a href="#" class="text-sm hover:underline">Uber Health</a></li>
+        </ul>
+      </div>
+
+     
+      <div>
+        <h3 class="font-bold mb-4 text-green-500">Ciudadanía global</h3>
+        <ul>
+          <li><a href="#" class="text-sm hover:underline">Seguridad</a></li>
+          <li><a href="#" class="text-sm hover:underline">Sostenibilidad</a></li>
+        </ul>
+      </div>
+
+      
+      <div>
+        <h3 class="font-bold mb-4 text-green-500">Viajes</h3>
+        <ul>
+          <li><a href="#" class="text-sm hover:underline">Reserva</a></li>
+          <li><a href="#" class="text-sm hover:underline">Aeropuertos</a></li>
+          <li><a href="#" class="text-sm hover:underline">Ciudades</a></li>
+        </ul>
+      </div>
+    </div>
+
+   
+    <div class="max-w-7xl mx-auto mt-12 border-t border-gray-700 pt-10 space-y-6">
+      
+      
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+        
+       
+        <div class="flex space-x-6 text-white text-xl">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+       
+        <div class="flex space-x-4">
+          <a href="#" class="flex items-center px-4 py-2 bg-white text-black rounded-lg shadow hover:opacity-90">
+            <i class="fab fa-google-play text-xl mr-2"></i>
+            <span class="text-sm font-medium">Google Play</span>
+          </a>
+
+          <a href="#" class="flex items-center px-4 py-2 bg-white text-black rounded-lg shadow hover:opacity-90">
+            <i class="fab fa-apple text-xl mr-2"></i>
+            <span class="text-sm font-medium">App Store</span>
+          </a>
+        </div>
+
+       
+        <div class="flex items-center space-x-4 text-sm">
+          <span class="flex items-center gap-2"><i class="fas fa-globe"></i> Español (Internacional)</span>
+          <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> San Salvador</span>
+        </div>
+      </div>
+
+    
+      <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        <p>© 2025 Uber Technologies Inc.</p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a href="#" class="hover:underline">Privacidad</a>
+          <a href="#" class="hover:underline">Accesibilidad</a>
+          <a href="#" class="hover:underline">Términos</a>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>
